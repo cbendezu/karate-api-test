@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: api.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.159 s <<< FAILURE! - in api.TestRunner
+testAll  Time elapsed: 1.149 s  <<< ERROR!
+java.lang.RuntimeException: not found: api/test.feature
+
