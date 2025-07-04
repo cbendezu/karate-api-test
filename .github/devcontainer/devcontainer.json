@@ -1,0 +1,10 @@
+{
+  "name": "Karate DSL Codespace",
+  "dockerFile": "Dockerfile",
+  "postStartCommand": "mvn test",
+  "customizations": {
+    "vscode": {
+      "extensions": ["vscjava.vscode-java-pack"]
+    }
+  }
+}
