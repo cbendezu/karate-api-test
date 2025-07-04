@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"1d31f8c0-1575-4b9a-80a5-a6c655c22902",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>api.test</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-07-04 04:02:26 AM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:3]"><span>[1:3]</span> <span>GET a post</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:9]"><span>[2:9]</span> <span>Validar ID de la cuenta actual</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">api/test.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Demo API test</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:3]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:3]</span>
+                <span class="scenario-name">GET a post</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>807</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref passed">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://jsonplaceholder.typicode.com/posts/1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">76</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">668</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">04:02:25.940 request:
+1 &gt; GET https://jsonplaceholder.typicode.com/posts/1
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.14.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+04:02:26.260 response time in milliseconds: 309
+1 &lt; 200
+1 &lt; Date: Fri, 04 Jul 2025 04:02:26 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; access-control-allow-credentials: true
+1 &lt; Cache-Control: max-age=43200
+1 &lt; etag: W/&quot;124-yiKdLzqO5gfBrJFrcdJ8Yq0LGnU&quot;
+1 &lt; expires: -1
+1 &lt; nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+1 &lt; pragma: no-cache
+1 &lt; report-to: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=D%2BNmjb7TNJtCdwtf1Dt76M4KzhcDAaYb54xCraPX12g%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1751447749&quot;}],&quot;max_age&quot;:3600}
+1 &lt; reporting-endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=D%2BNmjb7TNJtCdwtf1Dt76M4KzhcDAaYb54xCraPX12g%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1751447749&quot;
+1 &lt; vary: Origin, Accept-Encoding
+1 &lt; via: 2.0 heroku-router
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-powered-by: Express
+1 &lt; x-ratelimit-limit: 1000
+1 &lt; x-ratelimit-remaining: 999
+1 &lt; x-ratelimit-reset: 1751447793
+1 &lt; Age: 9970
+1 &lt; cf-cache-status: HIT
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 959bba22389d802a-IAD
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+1 &lt; server-timing: cfL4;desc=&quot;?proto=TCP&amp;rtt=5247&amp;min_rtt=5234&amp;rtt_var=1990&amp;sent=7&amp;recv=7&amp;lost=0&amp;retrans=0&amp;sent_bytes=3116&amp;recv_bytes=725&amp;delivery_rate=801646&amp;cwnd=252&amp;unsent_bytes=0&amp;cid=5dbadb35ba8b36ae&amp;ts=163&amp;x=0&quot;
+{
+  &quot;userId&quot;: 1,
+  &quot;id&quot;: 1,
+  &quot;title&quot;: &quot;sunt aut facere repellat provident occaecati excepturi optio reprehenderit&quot;,
+  &quot;body&quot;: &quot;quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto&quot;
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.id == 1</span>
+      </div>
+    </div>
+    <div class="time-cell passed">63</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:9]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:9]</span>
+                <span class="scenario-name">Validar ID de la cuenta actual</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>405</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://api-gateway-qa1.simpliroute.com/v1/accounts/me/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json;charset=UTF-8&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Accept = &#39;application/json, text/plain, */*&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Token 3aec3c3689c45589dc5427ad97ebf7edf2488455&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">396</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">04:02:26.406 request:
+1 &gt; GET https://api-gateway-qa1.simpliroute.com/v1/accounts/me/
+1 &gt; Content-Type: application/json;charset=UTF-8
+1 &gt; Accept: application/json, text/plain, */*
+1 &gt; Authorization: Token 3aec3c3689c45589dc5427ad97ebf7edf2488455
+1 &gt; Host: api-gateway-qa1.simpliroute.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.14.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+04:02:26.789 response time in milliseconds: 351
+1 &lt; 200
+1 &lt; server: istio-envoy
+1 &lt; date: Fri, 04 Jul 2025 04:02:26 GMT
+1 &lt; content-type: application/json
+1 &lt; allow: GET, PUT, PATCH, HEAD, OPTIONS
+1 &lt; x-request-id: 61107261-654c-4826-8953-30c04bdd073f
+1 &lt; x-frame-options: DENY
+1 &lt; vary: Accept-Language, Origin
+1 &lt; content-language: en
+1 &lt; x-content-type-options: nosniff
+1 &lt; referrer-policy: same-origin
+1 &lt; strict-transport-security: max-age=31536000; includeSubDomains
+1 &lt; x-envoy-upstream-service-time: 149
+1 &lt; transfer-encoding: chunked
+{&quot;id&quot;:286928,&quot;username&quot;:&quot;user_17515844291766@mailinator.com&quot;,&quot;name&quot;:&quot;user_17515844291766@mailinator.com&quot;,&quot;phone&quot;:&quot;56981485983&quot;,&quot;email&quot;:&quot;user_17515844291766@mailinator.com&quot;,&quot;is_owner&quot;:true,&quot;is_admin&quot;:true,&quot;is_driver&quot;:true,&quot;is_codriver&quot;:false,&quot;is_router_jr&quot;:false,&quot;is_monitor&quot;:false,&quot;is_coordinator&quot;:false,&quot;is_router&quot;:false,&quot;is_staff&quot;:false,&quot;is_seller_viewer&quot;:false,&quot;is_seller&quot;:false,&quot;old_id&quot;:null,&quot;created&quot;:&quot;2025-07-03T23:13:49.323992Z&quot;,&quot;modified&quot;:&quot;2025-07-03T23:13:52.702165Z&quot;,&quot;last_login&quot;:&quot;2025-07-03T23:13:52.701773Z&quot;,&quot;blocked&quot;:false,&quot;app_version&quot;:&quot;&quot;,&quot;last_mobile_activity&quot;:null,&quot;status&quot;:&quot;active&quot;,&quot;account&quot;:{&quot;id&quot;:82110,&quot;old_id&quot;:null,&quot;country&quot;:&quot;CL&quot;,&quot;geocoder_quality_level&quot;:1,&quot;status&quot;:&quot;registered&quot;,&quot;name&quot;:&quot;user_17515844291766@mailinator.com&quot;,&quot;active_until&quot;:&quot;2025-07-10T23:13:49.273300Z&quot;,&quot;plan_quantity&quot;:10,&quot;card_last4&quot;:&quot;&quot;,&quot;card_brand&quot;:null,&quot;funding&quot;:null,&quot;exp_month&quot;:null,&quot;exp_year&quot;:null,&quot;coupon&quot;:null,&quot;optimization_options&quot;:{&quot;balance&quot;:false,&quot;all_vehicles&quot;:true,&quot;open_start&quot;:false,&quot;open_ended&quot;:false,&quot;big_cluster&quot;:false,&quot;join&quot;:false,&quot;join_v2&quot;:false,&quot;big_cluster_optimize&quot;:false,&quot;last_position_optimize&quot;:false,&quot;displayed_options&quot;:[&quot;balance&quot;,&quot;all_vehicles&quot;,&quot;open_ended&quot;],&quot;fmv&quot;:&quot;2.0&quot;,&quot;fmb&quot;:null,&quot;single_tour&quot;:false,&quot;beauty&quot;:false,&quot;big_vrp&quot;:false,&quot;use_euclidean_distance&quot;:false,&quot;enable_graphs&quot;:false,&quot;auto_reorder&quot;:false,&quot;enable_soft_window&quot;:false,&quot;distance_to_join_visits&quot;:null,&quot;avoid_tolls&quot;:false},&quot;configs&quot;:[{&quot;key&quot;:&quot;enable_observations&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;send_gps&quot;,&quot;value&quot;:true},{&quot;key&quot;:&quot;live_tracking&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;max_distance&quot;,&quot;value&quot;:150},{&quot;key&quot;:&quot;detailed_route_indicators&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;vehicle_refill_time&quot;,&quot;value&quot;:0},{&quot;key&quot;:&quot;checkout_similars&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;checkout_similars_by&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;clean_gps_on_distance_reports&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_create_visit_with_nfc&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_jdh&quot;,&quot;value&quot;:true},{&quot;key&quot;:&quot;enable_signature&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;on_its_way_enabled&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_manual_checkin&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_custom_checkout&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;use_improved_km_calc&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;can_create_router_jr&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_fast_checkout&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_super_fast_checkout&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;update_eta_on_checkout&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;update_eta_on_start_route&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_join_similar_v2&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;use_autocheck_service&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;use_custom_osrm&quot;,&quot;value&quot;:&quot;&quot;},{&quot;key&quot;:&quot;enable_search_by_nfc&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;display_type_on_checkout_similar&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_auto_reorder&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_barcode_validate_reference&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_graphs&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_order_by_visibility&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_index_visits&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;hide_button_end_route&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_completed_visit_lock&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_route_edit_indicator&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;highlight_visit_by_weight&quot;,&quot;value&quot;:0},{&quot;key&quot;:&quot;highlight_visit_by_weight_2&quot;,&quot;value&quot;:0},{&quot;key&quot;:&quot;highlight_visit_by_weight_3&quot;,&quot;value&quot;:0},{&quot;key&quot;:&quot;maximum_distance_to_visit&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;open_routes_logic&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;vehicle_capacities_increment&quot;,&quot;value&quot;:0},{&quot;key&quot;:&quot;vehicle_journey_extention&quot;,&quot;value&quot;:0},{&quot;key&quot;:&quot;mandatory_success_checkout_picture&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;mandatory_failed_checkout_picture&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;can_create_co_driver&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;dashboards&quot;,&quot;value&quot;:true},{&quot;key&quot;:&quot;high_demand_route_designer&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_rest_time&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;sso_users&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_multi_drivers&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_visit_items&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;vehicle_type&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;incremental_routing&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;insertion_intensification&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_uturns&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;identify_verification&quot;,&quot;value&quot;:&quot;&quot;},{&quot;key&quot;:&quot;show_checkout_success_visit&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;show_checkout_failed_visit&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_enhanced_plan_edit_mode&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_plan_autosave&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_plan_status&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;calculate_checkin_time_with_invalid_checkout&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_reorder_on_move_visits&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_wave_routing&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_safety_mode&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_rebalance_routes&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_external_optimizer&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;number_visit_external_optimizer&quot;,&quot;value&quot;:12},{&quot;key&quot;:&quot;enable_block_vehicle_change&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;mandatory_on_its_way&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_block_plans_deletion&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_visits_out_of_route_filter&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_pickup_and_delivery_mode&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;show_contact_info_on_tracking&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_aircraft_routing&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;can_add_visit_end_route_mobile&quot;,&quot;value&quot;:&quot;disabled&quot;},{&quot;key&quot;:&quot;use_async_plan_creation&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;borderless_markers&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;show_visit_windows&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_checkout_status_pdf&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_clients_module&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;routing_sources_provider&quot;,&quot;value&quot;:&quot;osrm&quot;},{&quot;key&quot;:&quot;enable_travel_time_predictor&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_colors_for_contiguous_routes&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;map_provider&quot;,&quot;value&quot;:null},{&quot;key&quot;:&quot;enable_load_balance&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;geocoder_provider&quot;,&quot;value&quot;:&quot;{\&quot;primary\&quot;: \&quot;here\&quot;, \&quot;backup\&quot;: \&quot;google\&quot;}&quot;},{&quot;key&quot;:&quot;enable_routes_group_markers&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_time_balance&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;tracking_map_provider&quot;,&quot;value&quot;:null},{&quot;key&quot;:&quot;zone_map_provider&quot;,&quot;value&quot;:null},{&quot;key&quot;:&quot;enable_big_marker_in_route_designer&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;disable_external_dashboards&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;eta_range_scheduled_visit&quot;,&quot;value&quot;:60},{&quot;key&quot;:&quot;eta_range_visit_with_route_started&quot;,&quot;value&quot;:60},{&quot;key&quot;:&quot;eta_range_visit_on_its_way&quot;,&quot;value&quot;:30},{&quot;key&quot;:&quot;only_today_polylines_tracking&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;avoid_waiting_times&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;autocomplete_provider&quot;,&quot;value&quot;:&quot;google&quot;},{&quot;key&quot;:&quot;enable_hiding_visit_notes&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;streets_in_between_pdf_summary&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_scan_pickup_visit&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_accounting&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_multiple_active_routes&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_manage_visit_items&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;view_visits_from_previous_days&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_radial_routing&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;disable_re_checkout_visit&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;avoid_end_route_pending_visits&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_settings_module_for_router_user&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;disable_plan_duplication&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_live_tracking_gps_from_vehicles&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;avoid_edit_checkout_after_route_finished&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;disable_route_start_block&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;multi_results&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_drivers_coordinates_optimizer&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;change_order_visits&quot;,&quot;value&quot;:&quot;disabled&quot;},{&quot;key&quot;:&quot;break_time_windows&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_navigation_route&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;can_add_visit_end_route_mobile&quot;,&quot;value&quot;:&quot;disabled&quot;},{&quot;key&quot;:&quot;enable_button_whatsapp&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;enable_plans&quot;,&quot;value&quot;:false},{&quot;key&quot;:&quot;visit_reference_unique&quot;,&quot;value&quot;:false}],&quot;timezone&quot;:&quot;America/Santiago&quot;,&quot;vehicle_quantity&quot;:&quot;11 - 20&quot;,&quot;module_interest&quot;:&quot;optimizer&quot;,&quot;utm&quot;:&quot;&quot;,&quot;mrr&quot;:null,&quot;created&quot;:&quot;2025-07-03T23:13:49.273244Z&quot;,&quot;sso_domain&quot;:&quot;&quot;,&quot;stripe_customer_id&quot;:&quot;cus_ScAfbsFH5kL7jz&quot;,&quot;delivery_issues&quot;:[]},&quot;modules&quot;:[],&quot;has_suscription_id&quot;:false,&quot;organization&quot;:null,&quot;role&quot;:null,&quot;url&quot;:&quot;http://icarus-api-qa1.internal-simpliroute.com/v1/&quot;,&quot;gps_config&quot;:{&quot;url&quot;:&quot;https://icarus-api-qa1.internal-simpliroute.com/v1/tracking/background-location/&quot;,&quot;method&quot;:&quot;POST&quot;,&quot;autoSync&quot;:true,&quot;batchSync&quot;:false,&quot;stopOnTerminate&quot;:false,&quot;stopTimeout&quot;:5,&quot;activityRecognitionInterval&quot;:10000,&quot;debug&quot;:false,&quot;desiredAccuracy&quot;:0,&quot;distanceFilter&quot;:10,&quot;locationUpdateInterval&quot;:1000,&quot;fastestLocationUpdateInterval&quot;:10000,&quot;deferTime&quot;:0,&quot;triggerActivities&quot;:&quot;in_vehicle, on_bicycle, running, walking, on_foot&quot;,&quot;forceReloadOnMotionChange&quot;:false,&quot;forceReloadOnLocationChange&quot;:false,&quot;forceReloadOnGeofence&quot;:false,&quot;startOnBoot&quot;:false,&quot;foregroundService&quot;:true,&quot;stopDetectionDelay&quot;:1000,&quot;elasticityMultiplier&quot;:1000,&quot;stopAfterElapsedMinutes&quot;:0,&quot;desiredOdometerAccuracy&quot;:100,&quot;geofenceProximityRadius&quot;:1000}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.id == 286928</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
